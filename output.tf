@@ -10,10 +10,10 @@ output "s3_bucket_arn" {
   value       = aws_s3_bucket.terraform_state.arn
   description = "The ARN of the S3 bucket"
 }
-output "dynamodb_table_name" {
-  value       = aws_dynamodb_table.terraform_locks.name
-  description = "The name of the DynamoDB table"
-}
+# output "dynamodb_table_name" {
+#   value       = aws_dynamodb_table.terraform_locks.name
+#   description = "The name of the DynamoDB table"
+# }
 # output "ext_alb_sg_id" {  // Changed output name to contain underscore instead of dot  
 #   value = aws_security_group.ACS[ext_alb_sg].id  // Ensure this reference is valid  
 # }

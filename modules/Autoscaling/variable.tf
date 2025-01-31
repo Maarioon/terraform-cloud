@@ -51,6 +51,12 @@ variable "ami-nginx" {
   description = "ami for nginx"
 }
 
+
+variable "ami-web" {
+  type        = string
+  description = "ami for nginx"
+}
+
 variable "nginx-alb-tgt" {
   type        = string
   description = "nginx reverse proxy target group"
@@ -115,3 +121,10 @@ variable "create_read_replica" {
 #   ami           = lookup(var.images, var.region, "ami-12323")
 #   instance_type = "t2.micro"  # Replace with your desired instance type
 # }
+
+
+# variable "ami" {
+#   type        = string
+#   description = "AMI ID for the launch template"
+# }
+
