@@ -31,10 +31,10 @@ resource "aws_route53_record" "oyindamola" {
 }
 
 # validate the certificate through DNS method
-resource "aws_acm_certificate_validation" "oyindamola" {
-  certificate_arn         = aws_acm_certificate.oyindamola.arn
-  validation_record_fqdns = [for record in aws_route53_record.oyindamola : record.fqdn]
-}
+# resource "aws_acm_certificate_validation" "oyindamola" {
+#   certificate_arn         = aws_acm_certificate.oyindamola.arn
+#   validation_record_fqdns = [for record in aws_route53_record.oyindamola : record.fqdn]
+# }
 
 # create records for tooling
 resource "aws_route53_record" "tooling" {
