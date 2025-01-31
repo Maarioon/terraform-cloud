@@ -52,10 +52,6 @@ variable "ami-nginx" {
 }
 
 
-variable "ami-web" {
-  type        = string
-  description = "ami for nginx"
-}
 
 variable "nginx-alb-tgt" {
   type        = string
