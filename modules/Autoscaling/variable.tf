@@ -111,7 +111,7 @@ variable "create_read_replica" {
   default = false
 }
 
-resource "aws_instance" "web" {
-  ami           = lookup(var.images, var.region, "ami-0c614dee691cbbf37")
-  instance_type = "t2.micro"  # Replace with your desired instance type
-}
+# resource "aws_instance" "web" {
+#   ami           = lookup(var.images, var.region, "ami-12323")
+#   instance_type = "t2.micro"  # Replace with your desired instance type
+# }
