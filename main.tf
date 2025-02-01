@@ -90,12 +90,12 @@ module "RDS" {
   private_subnets = [module.Network.private_subnets-3, module.Network.private_subnets-4]
 }
 
-# module "compute" {
-#   source          = "./modules/compute"
-#   ami-jenkins     = var.ami-bastion
-#   ami-sonar       = var.ami-sonar
-#   ami-jfrog       = var.ami-sonar
-#   subnets-compute = module.Network.public_subnets-1
-#   sg-compute      = [module.Security.ALB-sg]
-#   keypair         = var.keypair
-# }
+module "compute" {
+  source          = "./modules/compute"
+  ami-jenkins     = var.ami-bastion
+  ami-sonar       = var.ami-sonar
+  ami-jfrog       = var.ami-sonar
+  subnets-compute = module.Network.public_subnets-1
+  sg-compute      = [module.Security.ALB-sg]
+  keypair         = var.keypair
+}

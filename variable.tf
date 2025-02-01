@@ -110,20 +110,20 @@ variable "ami-web" {
   type        = string
   description = "AMI ID for the launch template"
 }
-# variable "ami-jfrog" {
-#   type        = string
-#   description = "AMI ID for the launch template"
-# }
+variable "ami-jfrog" {
+  type        = string
+  description = "AMI ID for the launch template"
+}
 
 variable "ami-sonar" {
   type        = string
   description = "AMI ID for the launch template"
 }
 
-# variable "ami-jenkins" {
-#   type        = string
-#   description = "AMI ID for the launch template"
-# }
+variable "ami-jenkins" {
+  type        = string
+  description = "AMI ID for the launch template"
+}
 
 
 variable "ami-nginx-tgt" {
