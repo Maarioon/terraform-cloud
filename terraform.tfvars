@@ -25,14 +25,15 @@ environment = "production"
 
 # =         # "ami-0e2c8caa4b6378d8c" var.ami_web
 
-
+ami = "ami-78901234"
 ami-jenkins = "ami-23456789"   # Replace with the actual Jenkins AMI ID
-ami-jfrog   = "ami-0e2c8caa4b6378d8c"   # Replace with the actual JFrog AMI ID
+ami-jfrog   = "ami-67890123"   # Replace with the actual JFrog AMI ID
 ami-web     = "ami-34567890"
 ami-nginx   = "ami-12345678"
 ami-bastion = "ami-87654321"
 ami-sonar   = "ami-45678901"
 ami-nginx-tgt = "ami-56789012"
+
 
 
 # ami-nginx   = "ami-12345678"
