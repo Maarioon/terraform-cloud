@@ -16,14 +16,23 @@ preferred_number_of_private_subnets = "4"
 
 environment = "production"
 
-ami = "ami-23456789"     # "ami-0e2c8caa4b6378d8c"  
-ami-web = "ami-34567890"  # "ami-0e2c8caa4b6378d8c"
-ami-nginx   = "ami-12345678"
-ami-bastion = "ami-87654321"
-ami-sonar = "ami-45678901"
-ami-nginx-tgt = "ami-56789012"  
+# ami = "ami-23456789"     # "ami-0e2c8caa4b6378d8c"  
+# ami-web = "ami-34567890"  # "ami-0e2c8caa4b6378d8c"
+# ami-nginx   = "ami-12345678"
+# ami-bastion = "ami-87654321"
+# ami-sonar = "ami-45678901"
+# ami-nginx-tgt = "ami-56789012"  
 
 # =         # "ami-0e2c8caa4b6378d8c" var.ami_web
+
+
+ami-jenkins = "ami-23456789"   # Replace with the actual Jenkins AMI ID
+ami-jfrog   = "ami-0e2c8caa4b6378d8c"   # Replace with the actual JFrog AMI ID
+ami-web     = "ami-34567890"
+ami-nginx   = "ami-12345678"
+ami-bastion = "ami-87654321"
+ami-sonar   = "ami-45678901"
+ami-nginx-tgt = "ami-56789012"
 
 
 # ami-nginx   = "ami-12345678"
