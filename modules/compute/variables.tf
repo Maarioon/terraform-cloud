@@ -29,3 +29,8 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "ami-bastion" {
+  type        = string
+  description = "ami for bastion"
+}
